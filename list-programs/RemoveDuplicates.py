@@ -11,9 +11,7 @@ for i in range(len(li)):
 
 print(duplicate)
 
-
 # Logic 2
-
 uniqueList = []
 duplicateList = []
 
@@ -25,3 +23,10 @@ for value in li:
 
 print(uniqueList)
 print(duplicateList)
+
+"""Print the count of duplicate number in list"""
+my_dict = {i:li.count(i) for i in li}
+print(my_dict)
+
+string = "geeks quiz practice code"
+print(string.split()[::-1])
