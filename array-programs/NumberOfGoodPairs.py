@@ -12,24 +12,16 @@ Output: 0
 """
 
 nums = [1,2,3]
-count = list(range(0,100))
-totalcount = 0
-for i in nums:
-    # print(count[i])
-    totalcount = count[i]+1
-    print(count[i]+1, "count[i]+1")
+frequency = {}
+count = 0
 
-print(f" totalcount {totalcount}")
-# count = 0
-# output_list = []
-# for i in range(len(nums)):
-#     print(f" i : {i}")
-#     for j in range(i):
-#         print(f" j : {j}")
-#         if nums[i] == nums[j]:
-#             output_list.append(nums[i])
-#             # print(nums[i], nums[j])
+for num in nums:
+    if num in frequency:
+        count += frequency[num]    
+        frequency[num] += 1
+    else:
+        frequency[num] = 1
+        
+print(frequency)
 
-# print(output_list)
-# # return len(output_list)
-
+print(count)     

@@ -27,3 +27,5 @@ else:
     mid = sorted_array[int(indx)]
 
 print(mid)
+
+
